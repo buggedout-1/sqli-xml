@@ -10,7 +10,7 @@ This Go tool automates the detection of potential SQL Injection vulnerabilities 
 
 ## Features
 - **Skips slow URLs**: If the initial request takes more than **3 seconds**, it's skipped.
-- **SQL Injection Payload**: `?offset=1;SELECT IF((8303>8302),SLEEP(9),2356)#`
+- **SQL Injection Payload**: `/sitemap.xml?offset=1;SELECT IF((8303>8302),SLEEP(9),2356)#`
 - **Silent Mode (`--silent`)**: Only logs URLs where the payload execution time exceeds **8 seconds**.
 - **Concurrent Execution (`-w`)**: Uses multiple workers to speed up the scanning process.
 - **Bypasses SSL Certificate Verification**: Useful for testing misconfigured HTTPS.
