@@ -34,6 +34,7 @@ go run sqli-xml.go -l urls.txt -o output.txt
 or
 ```
 sqli-xml -l urls.txt -o output.txt
+```
 
 ### Silent Mode (Only Show Vulnerable URLs)
 ```sh
